@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".activity.StageActivity">
+
+    <TextView
+        android:id="@+id/prompt_stage_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/prompt_stage_name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/stage_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_primary_5"
+        android:hint="@string/prompt_stage_name_edit"
+        android:inputType="text"
+        android:padding="12dp"
+        android:imeOptions="actionNext"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/prompt_stage_name"
+        app:layout_constraintStart_toStartOf="@+id/prompt_stage_name"
+        app:layout_constraintTop_toBottomOf="@+id/prompt_stage_name" />
+
+    <TextView
+        android:id="@+id/prompt_start_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/prompt_start_time"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stage_name" />
+
+    <EditText
+        android:theme="@style/Widget.AppCompat.EditText"
+        android:id="@+id/start_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_primary_5"
+        android:focusable="false"
+        android:hint="@string/prompt_start_time"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/prompt_start_time"
+        app:layout_constraintStart_toStartOf="@+id/prompt_start_time"
+        app:layout_constraintTop_toBottomOf="@+id/prompt_start_time" />
+
+    <TextView
+        android:id="@+id/prompt_finish_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/prompt_finish_time"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_time" />
+
+    <EditText
+        android:theme="@style/Widget.AppCompat.EditText"
+        android:id="@+id/finish_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_primary_5"
+        android:focusable="false"
+        android:hint="@string/prompt_finish_time"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/prompt_finish_time"
+        app:layout_constraintStart_toStartOf="@+id/prompt_finish_time"
+        app:layout_constraintTop_toBottomOf="@+id/prompt_finish_time" />
+
+    <Button
+        android:id="@+id/action_next_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="@string/action_next_step"
+        android:theme="@style/ButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish_time"
+        app:layout_constraintVertical_bias="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

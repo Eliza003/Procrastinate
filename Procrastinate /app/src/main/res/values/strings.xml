@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Procrastinate</string>
+    <!--    title-->
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_reset_password">Re-set password</string>
+    <string name="title_activity_main">Hi ! Dear %s</string>
+    <string name="title_activity_new_one_time_activity">New one-time activity</string>
+    <string name="title_activity_new_long_term_activity">New long-term activity</string>
+    <string name="title_activity_stage">Stage %d</string>
+    <string name="title_activity_ongoing">Ongoing activities</string>
+    <string name="title_activity_finished">Finished activities</string>
+    <!--    common-->
+    <string name="common_succeeded">succeeded</string>
+    <string name="common_error">error</string>
+    <string name="common_simple_date_format">yyyy-MM-dd HH:mm</string>
+    <!--    login-->
+    <string name="prompt_user_name">User Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="create_an_account">create an account</string>
+    <string name="forget_password">forget password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="error_user_name">Password enter user name</string>
+    <string name="error_password">Password must be > 5 characters</string>
+    <string name="error_passwords_differ">Entered passwords differ</string>
+    <string name="login_successfully">Login successfully .</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <!--register-->
+    <string name="prompt_password_confirm">Confirm password</string>
+    <string name="action_register">Register</string>
+    <!--reset password-->
+    <string name="action_reset_confirm">Confirm</string>
+    <string name="reset_successfully">Reset successfully .</string>
+    <string name="reset_failed">Reset failed , Account does not exist</string>
+    <string name="registered_successfully">Registered successfully .</string>
+    <string name="register_failed">Register failed , Account already exists</string>
+    <!--main-->
+    <string name="prompt_activities_main">You have %s activities ongoing</string>
+    <string name="action_setting_new_activity">Setting new activity</string>
+    <string name="action_ongoing_activities">Ongoing activities</string>
+    <string name="action_finished_activities">Finished activities</string>
+    <string name="dialog_selective_type">What type of activity do you need to be reminded ?</string>
+    <array name="dialog_selective_type_array">
+        <item>One-time activity</item>
+        <item>Long-term activity</item>
+    </array>
+    <!--new one-time activity-->
+    <string name="prompt_activity_name">Activity name</string>
+    <string name="prompt_start_time">Start time</string>
+    <string name="prompt_location">Location</string>
+    <string name="prompt_description">Description</string>
+    <string name="action_done">Done</string>
+    <string name="error_enter_null">Please enter %s !</string>
+    <!--new long-term activity-->
+    <string name="prompt_activity_stage">How many steps you plan to work ?</string>
+    <string name="prompt_activity_stage_edit">Stage</string>
+    <string name="action_next_step">Next step</string>
+    <string name="error_stage">Stage must be > 0></string>
+    <!--    stage activity-->
+    <string name="prompt_finish_time">Finish time</string>
+    <string name="prompt_stage_name">What you going to do ?</string>
+    <string name="prompt_stage_name_edit">E.g Finish Pre-work:Reading</string>
+    <!--    Ongoing activity-->
+    <string name="indicator_one_time_activity">One-time Activity</string>
+    <string name="indicator_long_term_activity">Long-term Activity</string>
+    <string name="action_reset">Re-set</string>
+    <string name="action_unfinished">Unfinished</string>
+    <string name="action_finished">Finished</string>
+    <string name="action_details">Details</string>
+    <!--    Long-term details activity-->
+    <string name="action_ongoing">Ongoing</string>
+    <!--    finished activities-->
+    <string name="title_finished_activities">Finished activities:</string>
+    <string name="title_unfinished_activities">Unfinished activities:</string>
+    <string name="action_delete">Delete</string>
+    <string name="prompt_no_data">No Data !</string>
+    <!--    receiver-->
+    <string name="receiver_one_time_alarm">com.procrastinate.one-time.alarm.receiver</string>
+    <string name="receiver_long_term_alarm">com.procrastinate.long-term.alarm.receiver</string>
+    <string name="receiver_daily_alarm">com.procrastinate.daily.alarm.receiver</string>
+    <!--    notification-->
+    <string name="notification_title_one_time">Reminder for the start of one-time activity</string>
+    <string name="notification_title_long_term">Reminder for the start of long-term activity</string>
+    <string name="notification_content_one_time">请在【%s】开始【%s】活动！</string>
+    <string name="notification_content_long_term">活动【%s】step%d【%s】该开始了！</string>
+
+</resources>

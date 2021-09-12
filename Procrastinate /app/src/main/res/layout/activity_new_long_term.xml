@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".activity.NewLongTermActivity">
+
+
+    <TextView
+        android:id="@+id/prompt_activity_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/prompt_activity_name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/activity_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_primary_5"
+        android:hint="@string/prompt_activity_name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/prompt_activity_name"
+        app:layout_constraintStart_toStartOf="@+id/prompt_activity_name"
+        app:layout_constraintTop_toBottomOf="@+id/prompt_activity_name" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/prompt_activity_stage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/prompt_activity_stage"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_name" />
+
+    <EditText
+        android:id="@+id/activity_stage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:maxLength="2"
+        android:background="@drawable/bg_edit_primary_5"
+        android:hint="@string/prompt_activity_stage_edit"
+        android:inputType="number"
+        android:padding="12dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/prompt_activity_stage"
+        app:layout_constraintStart_toStartOf="@+id/prompt_activity_stage"
+        app:layout_constraintTop_toBottomOf="@+id/prompt_activity_stage" />
+
+    <TextView
+        android:id="@+id/prompt_start_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/prompt_start_time"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_stage" />
+
+    <EditText
+        android:theme="@style/Widget.AppCompat.EditText"
+        android:id="@+id/start_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_primary_5"
+        android:focusable="false"
+        android:hint="@string/prompt_start_time"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/prompt_start_time"
+        app:layout_constraintStart_toStartOf="@+id/prompt_start_time"
+        app:layout_constraintTop_toBottomOf="@+id/prompt_start_time" />
+
+
+    <Button
+        android:id="@+id/action_next_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="@string/action_next_step"
+        android:theme="@style/ButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_time"
+        app:layout_constraintVertical_bias="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

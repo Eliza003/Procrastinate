@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="16dp"
+    tools:context=".fragment.OngoingOneTimeActivityFragment">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginEnd="10dp"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/action_delete"
+        app:layout_constraintEnd_toStartOf="@+id/action_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/action_delete"
+        tools:text="activity name" />
+
+    <Button
+        android:id="@+id/action_delete"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/action_delete"
+        android:textSize="14sp"
+        android:theme="@style/ButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
